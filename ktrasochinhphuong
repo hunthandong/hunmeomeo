@@ -1,0 +1,14 @@
+#include "stdio.h"
+#include "math.h"
+int main(){
+	int a;
+	int kt=0;
+	scanf ("%d",&a);
+	kt = sqrt(a);
+	if (kt*kt==a) {
+		printf("SO CHINH PHUONG");
+	}
+	else{
+		printf("KHONG");
+	}
+}
