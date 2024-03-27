@@ -1,0 +1,14 @@
+#include "stdio.h" 
+int main(){
+	int N;
+//	printf("\n Nhap vao N = \n");
+	scanf("%d",&N);
+	if (N%2==0){
+		printf("CHAN");
+	}
+	else
+	{
+		printf("LE");
+	}
+	return 0;
+}
