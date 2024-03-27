@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+  // printf("Nhap hai so nguyen a và b: ");
+    scanf("%d %d", &a, &b);
+
+    int sum = a + b;
+    printf(" %d\n", sum);
+
+    return 0;
+}
