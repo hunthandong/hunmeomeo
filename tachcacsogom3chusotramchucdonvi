@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+  //  printf("Nhap mot so nguyen gom 3 chu so: ");
+    scanf("%d", &number);
+
+    int hangTram = number / 100;
+    int hangChuc = (number % 100) / 10;
+    int hangDonVi = number % 10;
+
+    printf("%d\n", hangTram);
+    printf("%d\n", hangChuc);
+    printf("%d\n", hangDonVi);
+
+    return 0;
+}
