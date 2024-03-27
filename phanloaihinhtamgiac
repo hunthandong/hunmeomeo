@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    scanf("%d %d %d", &a, &b, &c);
+
+
+    if (a + b > c && a + c > b && b + c > a) {
+
+        if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+            printf("tam giac vuong");
+        else if (a == b && b == c)
+            printf("tam giac deu");
+        else if (a == b || b == c || a == c)
+            printf("tam giac can");
+        else if (a * a + b * b > c * c || a * a + c * c > b * b || b * b + c * c > a * a)
+            printf("tam giac nhon");
+        else
+            printf("tam giac tu");
+    } else {
+        printf("KHONG\n");
+    }
+
+    return 0;
+}
