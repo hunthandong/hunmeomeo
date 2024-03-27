@@ -1,0 +1,26 @@
+#include"stdio.h"
+int main (){
+	int a,b,c,d ;
+//	printf (" nhap vao 4 so a b c d :");
+	scanf("%d %d %d %d",&a,&b,&c,&d);
+	if(a>b && a>c && a>d){
+	//	printf("so lon nhat la:");
+		printf("%d",a);
+	}
+	else if (b>a && b>c && b>d)
+	{
+		//printf ("so lon nhat la:");
+		printf("%d",b);
+		}
+	else if (c>b && c>a && c>d)
+	{
+	//	printf("so lon nhat la:");
+		printf("%d",c);
+		}
+	else if (d>c && d>b && d>a)
+	{
+		//printf("so lon nhat la:");
+		printf("%d",d);
+	}
+	return 0;
+}
