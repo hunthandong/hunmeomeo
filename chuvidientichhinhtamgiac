@@ -1,0 +1,13 @@
+#include "stdio.h" 
+#include "math.h" 
+int main(){
+	float a,b,c,cv=0,p=0,s=0;
+//	printf("Nhap vao cac canh a, b, c: \n");
+	scanf("%f%f%f",&a,&b,&c);
+	cv=a+b+c;
+	p=cv/2;
+	s=sqrt(p*(p-a)*(p-b)*(p-c));
+//	printf("\n Dien tich va chu vi cua tam giac: \n");
+	printf("%.2f\n%.2f",cv,s);
+	return 0; 
+}
