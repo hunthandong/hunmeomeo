@@ -1,0 +1,13 @@
+#include "stdio.h"
+int main(){
+	float a,b,tong=0,hieu=0,tich= 0,thuong=0;
+//	printf("\n Nhap vao a va b: \n");
+	scanf("%f%f",&a,&b);
+	tong=a+b;
+	hieu=a-b;
+	tich=a*b;
+	thuong=a/b;
+//	printf("\n Tong, hieu, tich, thuong cua hai so a va b: ");
+	printf("%.2f \n%.2f \n%.2f \n%.2f", tong,hieu,tich,thuong);
+	return 0; 
+}
