@@ -1,0 +1,11 @@
+#include "stdio.h" 
+int main(){
+	float a, bp=0, lp=0;
+//	printf("\n nhap a: \n");
+	scanf("%f",&a);
+	bp=a*a;
+	lp=a*a*a;
+//	printf("\n Binh phuong va lap phuong la: ");
+	printf("%.2f \n%.2f",bp,lp);
+	return 0; 
+}
