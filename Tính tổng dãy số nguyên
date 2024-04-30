@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    //printf("Nhap so phan tu cua day: ");
+    scanf("%d", &n);
+
+    int A[n];
+    //printf("Nhap cac phan tu cua day:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += A[i];
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+}
