@@ -1,0 +1,19 @@
+#include "stdio.h"
+
+int UCLN(int a, int b){
+	while (b!=0) 
+	{
+		int tg = b;
+		b = a % b;
+		a = tg; 
+	}
+	return a;
+	 
+}
+int main(){
+	int a, b;
+	scanf("%d %d", &a,&b);
+	int ucln = UCLN(a,b);
+	printf ("%d",ucln);
+	return 0; 
+}
