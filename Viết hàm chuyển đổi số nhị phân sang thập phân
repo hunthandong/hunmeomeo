@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int chuyenNhiPhanSangThapPhan(long long n) {
+    int soThapPhan = 0, i = 0, du;
+    while (n != 0) {
+        du = n % 10;
+        n /= 10;
+        soThapPhan += du * pow(2, i);
+        ++i;
+    }
+    return soThapPhan;
+}
+
+int main() {
+    long long soNhiPhan;
+    scanf("%lld", &soNhiPhan);
+    int soThapPhan = chuyenNhiPhanSangThapPhan(soNhiPhan);
+    printf("%d\n", soThapPhan);
+    return 0;
+}
