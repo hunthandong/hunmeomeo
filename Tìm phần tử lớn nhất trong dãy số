@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    //printf("Nhap so phan tu cua day: ");
+    scanf("%d", &n);
+
+    int A[n];
+    //printf("Nhap cac phan tu cua day:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    int max = A[0];
+    for (int i = 1; i < n; i++) {
+        if (A[i] > max) {
+            max = A[i];
+        }
+    }
+
+    printf(" %d\n", max);
+
+    return 0;
+}
