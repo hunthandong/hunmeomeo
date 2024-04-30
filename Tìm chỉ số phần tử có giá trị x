@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, x;
+    //printf("Nhap do dai day so: ");
+    scanf("%d", &n);
+    //printf("Nhap gia tri x: ");
+    scanf("%d", &x);
+
+    int A[n];
+    //printf("Nhap cac phan tu cua day: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    int index = -1;
+    for (int i = 0; i < n; i++) {
+        if (A[i] == x) {
+            index = i;
+        }
+    }
+
+    printf("%d\n", index);
+
+    return 0;
+}
