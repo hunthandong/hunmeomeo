@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    //printf("Nhap do dai day so: ");
+    scanf("%d", &n);
+
+    int A[n];
+    //printf("Nhap cac phan tu cua day: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    int max_value = A[0];
+    int max_index = 0;
+    for (int i = 1; i < n; i++) {
+        if (A[i] > max_value) {
+            max_value = A[i];
+            max_index = i;
+        }
+    }
+
+    printf("%d %d\n", max_value, max_index);
+
+    return 0;
+}
