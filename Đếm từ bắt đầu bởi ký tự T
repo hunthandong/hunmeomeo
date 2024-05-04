@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int countWordsStartingWithT(char *string) {
+    int count = 0;
+    char *token = strtok(string, " ");
+
+    while (token != NULL) {
+        if (token[0] == 'T' || token[0] == 't') {
+            count++;
+        }
+        token = strtok(NULL, " ");
+    }
+
+    return count;
+}
+
+int main() {
+    char string[100];
+
+    //printf("Nhap chuoi: ");
+    fgets(string, sizeof(string), stdin);
+    string[strcspn(string, "\n")] = '\0';
+
+    int wordCount = countWordsStartingWithT(string);
+
+    printf("%d\n", wordCount);
+
+    return 0;
+}
